@@ -1,0 +1,40 @@
+﻿<Window x:Name="Trangchu" x:Class="Do_An_1.frmTrangchu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Do_An_1"
+        xmlns:style="clr-namespace:Do_An_1.style"
+        mc:Ignorable="d"
+        Title="Trang chủ" Height="900" Width="1600"
+        WindowStartupLocation="CenterScreen" Icon="/icon/iconHomepage.png">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="style/ButtonStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <!-- Sidebar menu -->
+        <Grid x:Name="Sidebar" Width="240">
+            <StackPanel Width="240">
+                <StackPanel.Background>
+                    <ImageBrush ImageSource="/icon/bgSidebar.png" Stretch="UniformToFill"/>
+                </StackPanel.Background>
+                <Button x:Name="buttonPanel" Click="buttonPanel_Click" HorizontalAlignment="Left" Margin="0,0,0,20" Height="83" Width="90" Style="{StaticResource ButtonStyle1}" style:ButtonStyle.IconSource="/icon/iconPanel.png"/>
+                <Button x:Name="buttonInfor" FontSize="20" Height="64" Width="223" Click="buttonInfor_Click" Margin="0,0,0,10" Style="{StaticResource ButtonStyle}" style:ButtonStyle.IconSource="/icon/iconInfor.png" Content="THÔNG TIN"/>
+                <Button x:Name="buttonQuiz" FontSize="20" Height="64" Width="223" Click="buttonQuiz_Click" Margin="0,0,0,10" Style="{StaticResource ButtonStyle}" style:ButtonStyle.IconSource="/icon/iconQuiz.png" Content="CÂU HỎI"/>
+                <Button x:Name="buttonExam" FontSize="20" Height="64" Width="223" Click="buttonExam_Click" Margin="0,0,0,10" Style="{StaticResource ButtonStyle}" style:ButtonStyle.IconSource="/icon/iconExam.png" Content="QUẢN LÝ THI"/>
+                <Button x:Name="buttonStats" FontSize="20" Height="64" Width="223" Click="buttonStats_Click" Margin="0,0,0,10" Style="{StaticResource ButtonStyle}" style:ButtonStyle.IconSource="/icon/iconStats.png" Content="THỐNG KÊ"/>
+                <Button x:Name="buttonLogout" FontSize="20" Height="64" Width="223" Click="buttonLogout_Click" Margin="0,0,0,10" Style="{StaticResource ButtonStyle}" style:ButtonStyle.IconSource="/icon/iconButtonLogout1.png" Content="ĐĂNG XUẤT"/>
+            </StackPanel>
+        </Grid>
+        <Frame x:Name="Maincontent" NavigationUIVisibility="Hidden" Grid.Column="1"/>
+    </Grid>
+</Window>

@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="24385ac3f998ad81a406f7e717a6b418.jpg" />
+    <None Remove="backgroundLogin.png" />
+    <None Remove="bgSidebar.png" />
+    <None Remove="driver-license-icon-comic-style-id-card-cartoon-vector-illustration-white-isolated-background-identity-splash-effect-business-concept_157943-6454.jpg" />
+    <None Remove="iconAdmin.png" />
+    <None Remove="iconButtonLogin.png" />
+    <None Remove="iconButtonLogout1.png" />
+    <None Remove="iconDashingAway.png" />
+    <None Remove="iconFrmLogin.png" />
+    <None Remove="iconHomepage.png" />
+    <None Remove="iconInfor.png" />
+    <None Remove="icon\iconAdmin.png" />
+    <None Remove="icon\iconDashingAway.png" />
+    <None Remove="icon\iconExam.png" />
+    <None Remove="icon\iconHomepage.png" />
+    <None Remove="icon\iconPanel.png" />
+    <None Remove="icon\iconQuiz.png" />
+    <None Remove="icon\iconStats.png" />
+    <None Remove="user_456212.png" />
+    <None Remove="—Pngtree—cartoon motorcycle_4724516.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="icon\bgSidebar.png" />
+    <Resource Include="icon\iconExam.png" />
+    <Resource Include="icon\iconInfor.png" />
+    <Resource Include="icon\iconButtonLogout1.png" />
+    <Resource Include="icon\iconFrmLogin.png" />
+    <Resource Include="icon\bgLogin.png" />
+    <Resource Include="icon\iconButtonLogin.png" />
+    <Resource Include="icon\iconAdmin.png" />
+    <Resource Include="icon\iconDashingAway.png" />
+    <Resource Include="icon\iconHomepage.png" />
+    <Resource Include="icon\iconLogin.jpg" />
+    <Resource Include="icon\iconMotorcycle.png" />
+    <Resource Include="icon\iconPanel.png" />
+    <Resource Include="icon\iconQuiz.png" />
+    <Resource Include="icon\iconStats.png" />
+    <Resource Include="icon\iconUser.png" />
+  </ItemGroup>
+
+</Project>

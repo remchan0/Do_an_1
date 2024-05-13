@@ -1,0 +1,22 @@
+﻿<Window x:Name="Login" x:Class="Do_An_1.frmLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Do_An_1"
+        mc:Ignorable="d"
+        Title="Thi bằng lái xe A1" Height="530" Width="906"
+        WindowStartupLocation="CenterScreen" Icon="icon/iconFrmLogin.png">
+    <Grid>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+        <Label x:Name="labelLogin" Content="MÀN HÌNH ĐĂNG NHẬP" Margin="0,-340,0,0" VerticalAlignment="Center" FontSize="26" HorizontalAlignment="Center" FontFamily="UVN Lac Long Quan"/>
+        <Label x:Name="labelUsertype" Content="Bạn là :" HorizontalAlignment="Center" Margin="681,195,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="UVN Van Chuong"/>
+        <ComboBox x:Name="comboboxUsertype" HorizontalAlignment="Center" Margin="681,0,0,0" VerticalAlignment="Center" Width="152" FontSize="20" SelectionChanged="comboboxUsertype_SelectionChanged" FontFamily="UVN Van Chuong" >
+            <ComboBoxItem Content="Thí sinh"/>
+            <ComboBoxItem Content="Quản trị viên"/>
+        </ComboBox>
+        <Image x:Name="iconLogin" HorizontalAlignment="Center" Height="293" Width="515" Source="/icon/iconLogin.jpg" Stretch="UniformToFill" VerticalAlignment="Center"/>
+        <Image x:Name="iconMotorcycle" HorizontalAlignment="Left" Height="100" Margin="194,32,0,0" VerticalAlignment="Top" Width="100" Source="/icon/iconMotorcycle.png" FlowDirection="RightToLeft"/>
+        <Image x:Name="iconDashingAway" HorizontalAlignment="Left" Height="50" Margin="617,50,0,0" VerticalAlignment="Top" Width="50" Source="/icon/iconDashingAway.png"/>
+    </Grid>
+</Window>
